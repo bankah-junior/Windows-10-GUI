@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Desktop</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/w3.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body onload="showTime()">
+
+    <div class="jumbotron">
+
+        <!-- Main Screen -->
+        <div class="w3-container main-screen">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="left-screen">
+                        <div class="left-apps">
+                            <div>
+                                <img src="../icons/bitbucket.ico" alt="recycle-icon" class="recycle-icon" style="width: 20px; height: 20px;">
+                                <pre class="w3-text-white">Recycle</pre>
+                            </div>
+                            <div class="movies-icon-div">
+                                <img src="../icons/folder.png" alt="folder-icon" class="movies-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Movies</pre>
+                            </div>
+                            <div class="muc-icon-div">
+                                <img src="../icons/folder.png" alt="folder-icon" class="music-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Music</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/folder.png" alt="folder-icon" class="tutorials-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Tutorials</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/folder.png" alt="folder-icon" class="assignments-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Assignments</pre>
+                            </div>
+                            <div class="to-do-div">
+                                <img src="../icons/to-do.png" alt="folder-icon" class="to-do-icon" style="width: 35px; height: 20px;">
+                                <pre class="w3-text-white">To Do</pre>
+                            </div>
+                        </div>
+                        <div class="middle-apps">
+                            <div>
+                                <img src="../icons/code-alt.png" alt="computer-icon" class="computer-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">My PC</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/python.png" alt="python-icon" class="python-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Python</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/twitter-filled.png" alt="twitter-icon" class="twitter-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Twitter</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/youtube.png" alt="youtube-icon" class="youtube-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">YouTube</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/shield.png" alt="shield-icon" class="anti-virus-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Protection</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/shopify.png" alt="shopify-icon" class="shopify-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Shopify</pre>
+                            </div>
+                        </div>
+                        <div class="right-apps">
+                            <div class="quotes-div" onclick="newQuotes()">
+                                <img src="../icons/signal.png" alt="signal-icon" class="quote-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">Quotes</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/tree.png" alt="leaf-icon" class="mongodb-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">MongoDB</pre>
+                            </div>
+                            <div>
+                                <img src="../icons/xbox.png" alt="xbox-icon" class="xbox-icon" style="width: 20px; height: 20px; filter: invert(100%);">
+                                <pre class="w3-text-white">X-box</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="middle-screen">
+                        <!-- Movies Display -->
+                        <div class="movies-list middle-display">
+                            <div class="w3-card-4" style="width:100%;">
+                                <header class="w3-container w3-blue w3-leftbar w3-rightbar w3-topbar w3-border-pale-blue w3-text-white">
+                                  <h1>
+                                    Movies
+                                    <span class="w3-transparent close">&times;</span>
+                                </h1>
+                                </header>
+                            
+                                <div class="w3-container w3-white">
+                                    <ul class="w3-ul">
+                                        <li>
+                                            <a href="#">
+                                                <span style="margin-right: 1rem;">1]</span>YouTube
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span style="margin-right: 1rem;">2]</span>Netflix
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span style="margin-right: 1rem;">3]</span>Vidmate
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span style="margin-right: 1rem;">4]</span>Y2mates
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span style="margin-right: 1rem;">5]</span>TikTok
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span style="margin-right: 1rem;">7]</span>AnimeGoGo
+                                            </a>
+                                        </li>
+                                      </ul>
+                                </div>
+                            
+                                <footer class="w3-container w3-blue w3-leftbar w3-rightbar w3-bottombar w3-border-pale-blue w3-text-white">
+                                  <h5 class="w3-center w3-padding-16">Best websites to stream and download movies</h5>
+                                </footer>
+                              </div>
+                        </div>
+
+                        <!-- To Do Display -->
+                        <div class="to-do-display middle-display">
+                            <span class="w3-transparent exit">&times;</span>
+                            <iframe src="../To Do/index.html" height="500" width="400"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div id="mydiv" class="right-screen">
+                        <div id="mydivheader">
+                            <p>
+                                <i id="quotes">
+                                    <b>"Click on the Quotes Icon to display Quotes"</b>
+                                </i>
+                            </p>
+                        </div>
+                      </div>
+                </div>
+                <!-- Volume Controller -->
+                <!-- <div class="slidecontainer">
+                    <pre>Speaker/Headphone</pre>
+                    <img src="../icons/volume-high.png" alt="volume-high icon" class="speaker">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange"><span id="demo"></span>
+                </div> -->
+            </div>
+        </div>
+        <!-- End of Main Screen -->
+
+        <!-- Task Bar -->
+        <div class="task-bar">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="windows-div">
+                        <img src="../icons/windows.png" alt="windows icon" class="windows-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search-bar">
+                        <img src="../icons/search-alt.png" alt="search-icon" class="search-icon">
+                        <input type="text" class="input-text" size="33" placeholder="Type here to search">
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="cotana-div">
+                        <img src="../icons/cotana.png" alt="cotana icon" class="cotana-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="task-div">
+                        <img src="../icons/task-view.png" alt="task-view icon" class="task-view-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="apps-div">
+                        <div>
+                            <img src="../icons/microsoft-edge.png" alt="microsoft-edge icon" class="microsoft-edge-icon" style="width: 30px; height: 30px;" onclick="showError()">
+                        </div>
+                        <div>
+                            <img src="../icons/stackoverflow.png" alt="stackoverflow icon" class="stackoverflow-icon" style="width: 30px; height: 30px;" onclick="showError()">
+                        </div>
+                        <div>
+                            <img src="../icons/chrome.png" alt="chrome icon" class="chrome-icon mt-1" style="width: 30px; height: 25px;" onclick="showError()">
+                        </div>
+                        <div>
+                            <img src="../icons/telegram-original.png" alt="telegram-icon" class="telegram-icon" style="width: 30px; height: 30px;" onclick="showError()">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="apps-system-div">
+                        <img src="../icons/agenda.png" alt="news icon" class="news-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                        <img src="../icons/arrow-up.png" alt="arrow-up icon" class="arrow-up-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                        <img src="../icons/volume-high.png" alt="volume-high icon" class="volume-high-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                        <img src="../icons/world.png" alt="world icon" class="world-icon" style="width: 20px; height: 20px;" onclick="showError()">
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="time-div" onclick="showDateTime()">
+                        <span id="time"></span><br>
+                        <span id="date"></span>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="message-div">
+                        <img src="../icons/bubble.png" alt="bubble icon" class="bubble-icon"  onclick="showError()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Task Bar -->
+    </div>
+    
+
+
+    <script src="../JavaScript/index.js"></script>
+    <script src="../JavaScript/bootstrap.js"></script>
+</body>
+</html>

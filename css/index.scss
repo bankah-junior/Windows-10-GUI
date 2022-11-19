@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+
+    .jumbotron {
+        
+        .main-screen {
+            width: 100%;
+            height: 93vh;
+            background-image: url(../image/wallpaper.jpg);
+            background-position: center;
+            background-size: cover;
+            animation: theme 70s ease alternate infinite;
+
+            .row {
+                display: flex;
+
+                .left-screen {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 2rem;
+                    width: 40%;
+
+                    .left-apps,
+                     .middle-apps {
+                        height: 80vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            transition: all .1s ease;
+                            padding: 15px 15px 0 15px;
+                        }
+
+                        div:hover {
+                            background-color: rgba(121, 121, 244, .2);
+                            border: 2px dotted rgba(121, 121, 244, .6);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .right-apps {
+                        height: 39vh;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            transition: all .1s ease;
+                            padding: 15px 15px 0 15px;
+                        }
+
+                        div:hover {
+                            background-color: rgba(121, 121, 244, .2);
+                            border: 2px dotted rgba(121, 121, 244, .6);
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .middle-screen {
+                    padding-top: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .middle-display {
+                        height: 80vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+
+                        h1 {
+                            span {
+                                position: relative;
+                                right: -13rem;
+                                bottom: 0;
+                            }
+
+                            span:hover {
+                                color: #000;
+                                background-color: transparent;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    .movies-list {
+                        display: none;
+                        padding-top: 5rem;
+
+                        li {
+                            transition: all ease 1s;
+                        }
+
+                        li:hover {
+                            background-color: rgb(212, 211, 211);
+                        }
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .to-do-display {
+                        display: none;
+                        position: relative;
+                        left: 1.5rem;
+
+                        span.exit {
+                            position: relative;
+                            font-size: 4rem;
+                            color: #fff;
+                            left: 23rem;
+                            z-index: 99;
+                        }
+
+                        span.exit:hover {
+                            cursor: pointer;
+                            color: #F44336;
+                            -webkit-text-stroke: 1px #fff;
+                        }
+
+                        iframe {
+                            position: relative;
+                            bottom: 5rem;
+                        }
+                    }
+                }
+
+                #mydiv {
+                    position: absolute;
+                    width: 200px;
+                    top: 2rem;
+                    right: 1rem;
+                    z-index: 9;
+                    background-color: transparent;
+                    text-align: center;
+                }
+                
+                #mydivheader {
+                    padding: 10px;
+                    cursor: pointer;
+                    z-index: 10;
+                    background-color: transparent;
+                    color: #fff;
+                }
+
+                .slidecontainer {
+                    display: none;
+                    position: relative;
+                    left: 71rem;
+                    top: -1.5rem;
+                    width: 230px;
+                    height: 60px;
+                    background-color: rgb(63, 63, 63);
+
+                    pre {
+                        color: #fff;
+                    }
+
+                    .speaker {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        position: relative;
+                        bottom: 1.2rem;
+                        filter: invert(100%);
+                    }
+
+                    .slider {
+                        position: relative;
+                        bottom: 1rem;
+                    }
+
+                    #demo {
+                        color: #fff;
+                        font-size: 1.5rem;
+                        margin-left: 8px;
+                        position: relative;
+                        bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        @keyframes theme {
+            0% {
+                background-image: url('../image/wallpaper.jpg');
+            }
+            10% {
+                background-image: url('../image/10.jpg');
+            }
+            20% {
+                background-image: url('../image/20.jpg');
+            }
+            30% {
+                background-image: url('../image/30.jpg');            
+            }
+            40% {
+                background-image: url('../image/40.jpg');            
+            }
+            50% {
+                background-image: url('../image/50.jpg');            
+            }
+            60% {
+                background-image: url('../image/60.jpg');
+            }
+            70% {
+                background-image: url('../image/70.jpg');
+            }
+            80% {
+                background-image: url('../image/80.jpg');
+            }
+            90% {
+                background-image: url('../image/90.jpg');
+            }
+            100% {
+                background-image: url('../image/100.jpg');
+            }
+        }
+
+        .task-bar {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            background-color: rgb(27, 27, 27);
+
+            .windows-div {
+                display: inline-block;
+                padding: .6rem 1rem;
+                margin-top: 3px;
+                transition: all .1s ease;
+                cursor: pointer;
+
+                .windows-icon {
+                    filter: invert(100%);
+                }
+
+                .windows-icon:hover {
+                    filter: contrast(100%);
+                }
+            }
+
+            .windows-div:hover {
+                background-color: rgb(42, 42, 42);
+            }
+
+            .search-bar {
+                display: inline-flex;
+                position: absolute;
+                left: 4.1rem;
+
+                .search-icon {
+                    width: 15px; 
+                    height: 15px;
+                    position: relative;
+                    left: 0;
+                    top: .9rem;
+                    transform: rotate(90deg);
+                    z-index: 99;
+                }
+
+                .input-text {
+                    position: relative;
+                    right: 2rem;
+                    padding: .6rem 0 .6rem 3rem;
+                }
+                
+                .input-text::placeholder {
+                    color: rgb(34, 34, 34);
+                }
+            }
+
+            .cotana-div {
+                display: inline-block;
+                padding: .6rem 1rem;
+                position: relative;
+                right: 4.6rem;
+                top: 3px;
+                transition: all .1s ease;
+
+                .cotana-icon {
+                    filter: invert(100%);
+                    cursor: pointer;
+                }
+            }
+
+            .cotana-div:hover {
+                background-color: rgb(42, 42, 42);
+            }
+
+            .task-div {
+                display: inline-block;
+                padding: .6rem 1rem;
+                position: relative;
+                right: 9rem;
+                top: 3px;
+                transition: all .1s ease;
+
+                .task-view-icon {
+                    filter: invert(100%);
+                    cursor: pointer;
+                }
+            }
+
+            .task-div:hover {
+                background-color: rgb(42, 42, 42);
+            }
+
+            .apps-div {
+                display: flex;
+                justify-content: space-between;
+                width: 250px;
+                padding: .4rem 1rem .1rem 1rem;
+                position: relative;
+                top: 2.1px;
+                right: 13.8rem;
+                // border: 2px solid red;
+
+                img {
+                    // filter: invert(100%);
+                    cursor: pointer;
+                }
+            }
+
+            .apps-system-div {
+                display: flex;
+                justify-content: space-between;
+                width: 180px;
+                padding: .7rem 1rem;
+                position: relative;
+                top: 3px;
+                right: -8rem;
+
+                img {
+                    filter: invert(100%);
+                    cursor: pointer;
+                }
+            }
+
+            .time-div {
+                position: relative;
+                right: -4rem;
+                text-align: center;
+                color: #fff;
+                z-index: 99;
+                cursor: pointer;
+            }
+
+            .message-div {
+                display: flex;
+                justify-content: flex-end;
+                padding: 0rem .5rem;
+                position: relative;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    padding: .7rem 0;
+                    border-right: 2px solid #000;
+                    padding-right: 1rem;
+                    filter: invert(100%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
